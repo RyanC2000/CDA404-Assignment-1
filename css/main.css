@@ -1,0 +1,37 @@
+#HeaderWrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: none;
+    line-height: 1.5;
+    background-color: rgb(18, 36, 70);
+}
+
+#body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#ContentWrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: none;
+    line-height: 1.5;
+    background-color: rgb(18, 36, 70);
+}
+
+.fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+}
