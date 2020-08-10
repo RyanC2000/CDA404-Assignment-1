@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 #HeaderWrapper {
     width: 100%;
     margin: 0;
@@ -8,14 +14,30 @@
     background-color: rgb(18, 36, 70);
 }
 
+.MenuItem {
+    display: inline;
+}
+
+ul {
+    display: inline-block;
+}
+
+.LMLogo {
+    max-width: 194px;
+    margin: 2%;
+    display: inline;
+}
+
 #body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.726);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 #ContentWrapper {
-    max-width: 960px;
-    margin: 0 auto;
+    width: 85%;
+    height: 200px;
+    background-color: white;
+    float: auto;
 }
 
 #footer {
