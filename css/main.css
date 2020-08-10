@@ -7,16 +7,25 @@
 
 #HeaderWrapper {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    border: none;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
     background-color: rgb(18, 36, 70);
+    overflow:hidden;
 }
 
-a:link {
-    text-decoration: none;
-    color: white;
+.LMLogo {
+    max-width: 250px;
+    float: left;
+    margin-left: 7.5%;
+}
+
+ul {
+    float: left;
+    list-style-type: none;
+    width: 60%;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+    margin-top: 1.5%;
 }
 
 .MenuItem {
@@ -30,43 +39,63 @@ a:link {
    background-position: 0 100%;
    background-repeat: repeat-x;
    background-size: 4px 4px;
- color: white;
- padding-left: 3%;
- padding-right: 3%;
- padding-top: 1%;
- padding-bottom: 1%;
- text-decoration: none;
- transition: background-size .2s;
- margin-left: 0;
- margin-right: 2%;
- margin-top: 0%;
- margin-bottom: 0%;
+   color: white;
+   padding-left: 2%;
+   padding-right: 2%;
+   padding-top: 0.5%;
+   padding-bottom: 1%;
+   text-decoration: none;
+   transition: background-size .2s;
+   margin: 1%;
+}
+
+.LMUKItem {
+    font-weight: bold;
+    text-decoration: none;
+    background-position: 0 100%;
+    background-size: 4px 4px;
+    color: rgb(18, 36, 70);
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin-right: 5%;
+    margin-left: 10%;
+    display: inline;
+}
+
+a.menulink:link {
+    text-decoration: none;
+    color: white;
+}
+
+a.menulink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.lmuklink:link {
+    text-decoration: none;
+    color: rgb(18, 36, 70);
+}
+
+a.lmuklink:visited {
+    text-decoration: none;
+    color: rgb(18, 36, 70);
 }
 
 .MenuItem:hover {
     background-size: 4px 50px;
 }
 
-ul {
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 15%;
-    padding: 0;
-    overflow: hidden;
-    width: 50%;
+.MenuItem:hover {
+    background-size: 4px 50px;
 }
 
-#LMUK {
-    background-color: white;
-    color: rgb(18, 36, 70);
-    float: right;
-}
-
-.LMLogo {
-    max-width: 194px;
-    display: inline-block;
-    margin-left: 15%;
-    margin-right: 2%;
+.LMUKItem:hover {
+    background-color: grey;
+    color: white;
 }
 
 #body {
@@ -76,19 +105,17 @@ ul {
 
 #ContentWrapper {
     width: 85%;
-    height: 200px;
+    height: 100vh;
     background-color: white;
     margin: auto;
 }
 
 #footer {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    border: none;
-    line-height: 1.5;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
     background-color: rgb(18, 36, 70);
+    overflow:hidden;
 }
 
 .fa {
@@ -99,4 +126,30 @@ ul {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    
+}
+
+h2 {
+    
+}
+
+form input[type=textarea] {
+    vertical-align: text-top;
+    border: solid grey;
+    padding-bottom: 5%;
+    width: 99%;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+article {
+    border-bottom: solid grey;
 }
