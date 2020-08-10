@@ -2,6 +2,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #HeaderWrapper {
@@ -10,26 +11,66 @@
     padding: 0;
     vertical-align: baseline;
     border: none;
-    line-height: 1.5;
     background-color: rgb(18, 36, 70);
 }
 
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
 .MenuItem {
+    text-decoration: none;
     display: inline;
+    background:
+    linear-gradient(
+      to bottom, rgb(36,80,141) 0%,
+      rgb(36,80,141) 100%
+    );
+   background-position: 0 100%;
+   background-repeat: repeat-x;
+   background-size: 4px 4px;
+ color: white;
+ padding-left: 3%;
+ padding-right: 3%;
+ padding-top: 1%;
+ padding-bottom: 1%;
+ text-decoration: none;
+ transition: background-size .2s;
+ margin-left: 0;
+ margin-right: 2%;
+ margin-top: 0%;
+ margin-bottom: 0%;
+}
+
+.MenuItem:hover {
+    background-size: 4px 50px;
 }
 
 ul {
     display: inline-block;
+    list-style-type: none;
+    margin-right: 15%;
+    padding: 0;
+    overflow: hidden;
+    width: 50%;
+}
+
+#LMUK {
+    background-color: white;
+    color: rgb(18, 36, 70);
+    float: right;
 }
 
 .LMLogo {
     max-width: 194px;
-    margin: 2%;
-    display: inline;
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 2%;
 }
 
 #body {
-    background-color: rgba(255, 255, 255, 0.726);
+    background:grey;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -37,7 +78,7 @@ ul {
     width: 85%;
     height: 200px;
     background-color: white;
-    float: auto;
+    margin: auto;
 }
 
 #footer {
@@ -51,9 +92,11 @@ ul {
 }
 
 .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
