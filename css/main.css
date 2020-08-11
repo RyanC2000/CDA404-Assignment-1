@@ -211,3 +211,16 @@ form input[type=submit]:hover {
     margin-left: 5px;
     margin-bottom: 20px;
 }
+
+#TitleWrapper {
+    width: 100%;
+    background-color: rgb(18,47,87);
+}
+
+#TitleMessage {
+    color: white; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    padding: 15px;
+}
