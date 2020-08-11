@@ -202,10 +202,12 @@ form input[type=submit] {
     font-size: 20px;
 }
 
-#photo {
+form input[type=submit]:hover {
+    background-color: rgb(255,173,89);
+}
+
+#ProfilePhoto {
     width: 95%;
-    height: 180px;
-    background-color: white;
     margin-left: 5px;
     margin-bottom: 20px;
 }
