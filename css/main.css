@@ -224,3 +224,8 @@ form input[type=submit]:hover {
     margin-left: 1%;
     padding: 15px;
 }
+
+#ActivePage {
+    border-right: 5px solid rgb(255,129,42);
+    color: white !important;
+}
