@@ -7,6 +7,175 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+}
+
+/* header and footer */
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(18, 36, 70);
+    overflow:hidden;
+}
+
+h3 {
+    display: inline-block;
+    margin: auto;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+links {
+    display: inline-block;
+    margin-right: 7.5%;
+}
+
+.fa {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(18, 36, 70);
+    margin-top: 0.5%;
+}
+
+#HeaderWrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(18, 36, 70);
+    overflow:hidden;
+}
+
+.LMLogo {
+    max-width: 250px;
+    float: left;
+    margin-left: 7.5%;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 7.5%;
+    margin-top: 1.5%;
+    width: 55%;
+}
+
+.MenuItem {
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgb(36,80,141) 0%, rgb(36,80,141) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    text-decoration: none;
+    transition: background-size .2s;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.LMUKItem {
+    font-weight: bold;
+    text-decoration: none;
+    background-position: 0 100%;
+    background-size: 4px 4px;
+    color: rgb(18, 36, 70);
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin: auto;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+a.menulink:link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+a.menulink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.lmuklink:link {
+    text-decoration: none;
+    color: rgb(18, 36, 70);
+}
+
+a.lmuklink:visited {
+    text-decoration: none;
+    color: rgb(18, 36, 70);
+}
+
+.MenuItem:hover {
+    background-size: 4px 50px;
+}
+
+.LMUKItem:hover {
+    background-color: grey;
+    color: white;
+}
+
+/* page side navigation bars */
+
+#NavigationPane {
+    background-color:rgb(18,47,87);
+    width: 20%;
+    min-height: 100vh;
+    float: left;
+}
+
+#ProfilePhoto {
+    width: 95%;
+    margin: auto;
+    display: block;
+    margin-top: 16%;
+    margin-bottom: 16%;
+}
+
+#PageNav {
+    margin:0;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.PageNavItem {
+    border-top: solid white;
+    border-bottom: solid white;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.PageNavItem:hover {
+    border-right: 5px solid rgb(255,173,89);
+}
+
 #Feed {
     background-color:rgb(18,47,87);
     width: 30%;
@@ -15,6 +184,50 @@
     height: 100vh;
     margin-bottom: 2%;
     float: right;
+}
+
+aside {
+    color: white;
+    margin: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    margin: auto;
+    margin-bottom: 5%; 
+    width: 95%;
+  }
+
+  table td {
+    border: solid white; 
+    padding: 1%;
+  }
+
+  table tr:first-child td {
+    border-top: 0;
+  }
+
+  table tr td:first-child {
+    border-left: 0;
+  }
+
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  table tr td:last-child {
+    border-right: 0;
+  }
+
+/* page content */
+
+#ContentWrapper {
+    width: 85%;
+    min-height: 100vh;
+    background-color: white;
+    margin: auto;
+    overflow: hidden;
 }
 
 section {
@@ -26,7 +239,64 @@ section {
     margin-bottom: 1%;
 }
 
-/*Slideshow*/
+h1 {
+    margin-top: 2%;
+    font-size: 2em;
+}
+
+form input[type=textarea] {
+    vertical-align: text-top;
+    border: 1px solid grey;
+    padding-bottom: 5%;
+    width: 100%;
+    margin-bottom: 0.5%;
+}
+
+article {
+    display: block;
+    border-bottom: solid grey;
+    margin: auto;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-bottom: 1%;
+}
+
+form input[type=submit] {
+    background-color: rgb(255,129,42);
+    width: 20%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+form input[type=submit]:hover {
+    background-color: rgb(255,173,89);
+}
+
+#TitleWrapper {
+    width: 100%;
+    background-color: rgb(18,47,87);
+}
+
+#TitleMessage {
+    color: white; 
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    padding: 15px;
+}
+
+#ActivePage {
+    border-right: 5px solid rgb(255,129,42);
+    color: white !important;
+}
+
+/*Carousel*/
 
 .effect.slide {
     width: 90%;
@@ -58,282 +328,7 @@ span {
     background-color: rgb(255,129,42);
 }
 
-body {
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
-}
-
-#HeaderWrapper {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0px 10px 0px;
-    background-color: rgb(18, 36, 70);
-    overflow:hidden;
-}
-
-.LMLogo {
-    max-width: 250px;
-    float: left;
-    margin-left: 7.5%;
-}
-
-ul {
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 7.5%;
-    margin-top: 1.5%;
-    width: 60%;
-}
-
-.MenuItem {
-    text-decoration: none;
-    display: inline-block;
-    background:
-    linear-gradient(
-      to bottom, rgb(36,80,141) 0%,
-      rgb(36,80,141) 100%
-    );
-   background-position: 0 100%;
-   background-repeat: repeat-x;
-   background-size: 4px 4px;
-   color: white;
-   padding-left: 2%;
-   padding-right: 2%;
-   padding-top: 0.5%;
-   padding-bottom: 1%;
-   text-decoration: none;
-   transition: background-size .2s;
-   margin-left: 1%;
-   margin-right: 1%;
-}
-
-.LMUKItem {
-    font-weight: bold;
-    text-decoration: none;
-    background-position: 0 100%;
-    background-size: 4px 4px;
-    color: rgb(18, 36, 70);
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 0.5%;
-    padding-bottom: 1%;
-    margin: auto;
-    margin-left: 10%;
-
-    display: inline-block;
-}
-
-a.menulink:link {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-}
-
-a.menulink:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a.lmuklink:link {
-    text-decoration: none;
-    color: rgb(18, 36, 70);
-}
-
-a.lmuklink:visited {
-    text-decoration: none;
-    color: rgb(18, 36, 70);
-}
-
-.MenuItem:hover {
-    background-size: 4px 50px;
-}
-
-.MenuItem:hover {
-    background-size: 4px 50px;
-}
-
-.LMUKItem:hover {
-    background-color: grey;
-    color: white;
-}
-
-#body {
-    background:grey;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-#ContentWrapper {
-    width: 85%;
-    min-height: 100vh;
-    background-color: white;
-    margin: auto;
-    overflow: hidden;
-}
-
-#footer {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0px 10px 0px;
-    background-color: rgb(18, 36, 70);
-    overflow:hidden;
-    justify-content: space-evenly;
-}
-
-links {
-    display: inline-block;
-    margin-right: 7.5%;
-}
-
-.fa {
-    display: inline-block;
-    background-color: white;
-    padding: 10px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: rgb(18, 36, 70);
-    margin-top: 0.5%;
-}
-
-h3 {
-    display: inline-block;
-    margin: auto;
-    font-size: 14px;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-}
-
-table {
-    border-collapse: collapse;
-    color: white;
-    margin: auto;
-    margin-bottom: 5%; 
-    width: 95%;
-  }
-
-  table td {
-    border: solid white; 
-    padding: 1%;
-  }
-  table tr:first-child td {
-    border-top: 0;
-  }
-  table tr td:first-child {
-    border-left: 0;
-  }
-  table tr:last-child td {
-    border-bottom: 0;
-  }
-  table tr td:last-child {
-    border-right: 0;
-  }
-
-h1 {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-h2 {
-    margin-top: 1%;
-    margin-bottom: 1px;
-}
-
-form input[type=textarea] {
-    vertical-align: text-top;
-    border: 1px solid grey;
-    padding-bottom: 5%;
-    width: 100%;
-    margin-bottom: 0.5%;
-}
-
-article {
-    display: block;
-    border-bottom: solid grey;
-    margin: auto;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    padding-bottom: 1%;
-}
-
-#NavigationPane {
-    background-color:rgb(18,47,87);
-    width: 20%;
-    min-height: 100vh;
-    float: left;
-    margin-right: 1%;
-}
-
-#PageNav {
-    margin:0;
-    margin-top: 10%;
-    width: 100%;
-}
-
-.PageNavItem {
-    border-top: solid white;
-    border-bottom: solid white;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    width: 100%;
-    color: white;
-    text-align: center;
-}
-
-.PageNavItem:hover {
-    border-right: 5px solid rgb(255,129,42);
-}
-
-form input[type=submit] {
-    background-color: rgb(255,129,42);
-    width: 20%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-form input[type=submit]:hover {
-    background-color: rgb(255,173,89);
-}
-
-#ProfilePhoto {
-    width: 95%;
-    margin: auto;
-    display: block;
-    margin-top: 16%;
-    margin-bottom: 16%;
-}
-
-#TitleWrapper {
-    width: 100%;
-    background-color: rgb(18,47,87);
-}
-
-#TitleMessage {
-    color: white; 
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 1%;
-    padding: 15px;
-}
-
-#ActivePage {
-    border-right: 5px solid rgb(255,129,42);
-    color: white !important;
-}
-
-/*  responsive design for devices <= 1200px */
+/* responsive layout for displays <= 1200px */
 
 @media (max-width: 1200px) {
 
@@ -357,12 +352,6 @@ form input[type=submit]:hover {
        padding-bottom: 1%;
     }
     
-    #MenuList {
-        margin: 0;
-        display: block;
-        width: auto;
-    }
-
     .LMUKItem {
        
         margin: auto;
@@ -384,62 +373,26 @@ form input[type=submit]:hover {
 
 }
 
-/*  responsive design for devices <= 980px */
+/* responsive design for displays <= 980px */
 
 @media (max-width: 980px) {
 
-h3 {
-    margin: auto;
-}
+    #MenuList {
 
-.links {
-    float: left;
-    display: block;
-    margin-right: 1%;
-}
+            margin: auto;
+            display: block;
+            max-width: 55%;
+    }
 
-.LMLogo {
-    max-width: 165px;
-    margin-left: 3%;
-}
-
-#ContentWrapper {
-    width: 100%;
-    min-height: 100vh;
-}
-
-.fa {
-    display: inline-block;
-    background-color: white;
-    padding: 7px;
-    font-size: 20px;
-    width: 12px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: rgb(18, 36, 70);
-    margin-top: 0.5%;
-}
-
-}
-
-/*  responsive design for devices <= 480px */
-
-@media (max-width: 480px) {
+    #footer {
+        display: block;
+    }
 
 .LMLogo {
     float: none;
     max-width: 250px;
     margin: auto;
     display: block;
-    }
-
-    #ProfilePhoto {
-        width: 95%;
-        margin: auto;
-        display: block;
-        margin-top: 5%;
-        margin-bottom: 5%;
     }
 
     h3 {
@@ -462,6 +415,25 @@ h3 {
         text-align: center;
     }
 
+#ContentWrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+}
+
+/* responsive design for displays <= 480px */
+
+@media (max-width: 480px) {
+
+    #ProfilePhoto {
+        width: 95%;
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
     #ContentWrapper {
         width: 100%;
         min-height: 100vh;
@@ -475,12 +447,26 @@ h3 {
         display: block;
         background-color: darkgrey;
         border-radius: 4%;
+        width: 95%;
     }
 
     ul {
         margin: 1%;
         display: block;
         list-style-type: none;
+    }
+
+    #Feed {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-right: 0;
+    }
+
+    section {
+        width: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     
     #NavigationPane {
