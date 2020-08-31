@@ -1,8 +1,66 @@
+/* main styling */
+
 * {
     margin: 0;
     border: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+#Feed {
+    background-color:rgb(18,47,87);
+    width: 30%;
+    min-height: 100%;
+    margin-right: 1%;
+    height: 100vh;
+    margin-bottom: 2%;
+    float: right;
+}
+
+section {
+    color: black;
+    float: left;
+    width: 65%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+/*Slideshow*/
+
+.effect.slide {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.slide img {
+    width: 100%;
+    margin: auto;
+}
+
+.dot-container {
+    text-align: center;
+}
+
+span {
+    border-radius: 50%;
+    border: solid 1px grey;
+    height: 7.5px;
+    width: 7.5px;
+    background-color:white;
+    display: inline-block;
+    transition: all 0.4s linear;
+}
+
+.active {
+    background-color: rgb(255,129,42);
+}
+
+body {
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
 }
 
 #HeaderWrapper {
@@ -22,15 +80,14 @@
 ul {
     display: inline-block;
     list-style-type: none;
-    width: 60%;
-    margin-right: 7.5%;
     margin-left: 7.5%;
     margin-top: 1.5%;
+    width: 60%;
 }
 
 .MenuItem {
     text-decoration: none;
-    display: inline;
+    display: inline-block;
     background:
     linear-gradient(
       to bottom, rgb(36,80,141) 0%,
@@ -46,7 +103,8 @@ ul {
    padding-bottom: 1%;
    text-decoration: none;
    transition: background-size .2s;
-   margin: 1%;
+   margin-left: 1%;
+   margin-right: 1%;
 }
 
 .LMUKItem {
@@ -60,12 +118,16 @@ ul {
     padding-right: 2%;
     padding-top: 0.5%;
     padding-bottom: 1%;
-    margin-right: 5%;
+    margin: auto;
     margin-left: 10%;
-    display: inline;
+
+    display: inline-block;
 }
 
 a.menulink:link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: white;
 }
@@ -108,14 +170,22 @@ a.lmuklink:visited {
     min-height: 100vh;
     background-color: white;
     margin: auto;
+    overflow: hidden;
 }
 
 #footer {
+    display: flex;
     width: 100%;
     margin: 0 auto;
     padding: 10px 0px 10px 0px;
     background-color: rgb(18, 36, 70);
     overflow:hidden;
+    justify-content: space-evenly;
+}
+
+links {
+    display: inline-block;
+    margin-right: 7.5%;
 }
 
 .fa {
@@ -132,44 +202,73 @@ a.lmuklink:visited {
 }
 
 h3 {
-    
+    display: inline-block;
+    margin: auto;
     font-size: 14px;
     font-weight: normal;
-    display: inline-block;
     color: white;
-    margin-left: 18%;
-    margin-right: 18%;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+    margin: auto;
+    margin-bottom: 5%; 
+    width: 95%;
+  }
+
+  table td {
+    border: solid white; 
+    padding: 1%;
+  }
+  table tr:first-child td {
+    border-top: 0;
+  }
+  table tr td:first-child {
+    border-left: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:last-child {
+    border-right: 0;
+  }
+
+h1 {
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-h1 {
-    margin-top: 1%;
-}
-
 h2 {
     margin-top: 1%;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 form input[type=textarea] {
     vertical-align: text-top;
     border: 1px solid grey;
     padding-bottom: 5%;
-    width: 99%;
-    margin-right: 1%;
+    width: 100%;
     margin-bottom: 0.5%;
 }
 
 article {
+    display: block;
     border-bottom: solid grey;
     margin: auto;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-bottom: 1%;
 }
 
 #NavigationPane {
     background-color:rgb(18,47,87);
     width: 20%;
-    height: 100vh;
+    min-height: 100vh;
+    float: left;
+    margin-right: 1%;
 }
 
 #PageNav {
@@ -194,9 +293,11 @@ article {
 
 form input[type=submit] {
     background-color: rgb(255,129,42);
-    width: 10%;
+    width: 20%;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin-bottom: 1%;
+    margin-left: 1%;
     color: white;
     font-weight: 700;
     font-size: 20px;
@@ -208,8 +309,10 @@ form input[type=submit]:hover {
 
 #ProfilePhoto {
     width: 95%;
-    margin-left: 5px;
-    margin-bottom: 20px;
+    margin: auto;
+    display: block;
+    margin-top: 16%;
+    margin-bottom: 16%;
 }
 
 #TitleWrapper {
@@ -228,4 +331,202 @@ form input[type=submit]:hover {
 #ActivePage {
     border-right: 5px solid rgb(255,129,42);
     color: white !important;
+}
+
+/*  responsive design for devices <= 1200px */
+
+@media (max-width: 1200px) {
+
+    .MenuItem {
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        text-decoration: none;
+        background:
+        linear-gradient(
+          to bottom, rgb(36,80,141) 0%,
+          rgb(36,80,141) 100%
+        );
+       background-position: 0 100%;
+       background-repeat: repeat-x;
+       background-size: 3px 3px;
+       color: white;
+       padding-left: 1%;
+       padding-right: 1%;
+       padding-top: 0.5%;
+       padding-bottom: 1%;
+    }
+    
+    #MenuList {
+        margin: 0;
+        display: block;
+        width: auto;
+    }
+
+    .LMUKItem {
+       
+        margin: auto;
+        margin-top: 1.5%;
+        margin-left: 1%;
+    }
+
+    h3 {
+        
+    }
+    
+    .links {
+        display: inline-block;
+    }
+
+    #footer {
+        
+    }
+
+}
+
+/*  responsive design for devices <= 980px */
+
+@media (max-width: 980px) {
+
+h3 {
+    margin: auto;
+}
+
+.links {
+    float: left;
+    display: block;
+    margin-right: 1%;
+}
+
+.LMLogo {
+    max-width: 165px;
+    margin-left: 3%;
+}
+
+#ContentWrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.fa {
+    display: inline-block;
+    background-color: white;
+    padding: 7px;
+    font-size: 20px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(18, 36, 70);
+    margin-top: 0.5%;
+}
+
+}
+
+/*  responsive design for devices <= 480px */
+
+@media (max-width: 480px) {
+
+.LMLogo {
+    float: none;
+    max-width: 250px;
+    margin: auto;
+    display: block;
+    }
+
+    #ProfilePhoto {
+        width: 95%;
+        margin: auto;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    h3 {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    links {
+        float: none;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    #ContentWrapper {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #MenuList {
+        margin: auto;
+        margin-right: 1%;
+        margin-left: 1%;
+        padding: 2%;
+        display: block;
+        background-color: darkgrey;
+        border-radius: 4%;
+    }
+
+    ul {
+        margin: 1%;
+        display: block;
+        list-style-type: none;
+    }
+    
+    #NavigationPane {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #PageNav {
+        margin:0;
+        margin-top: 0.5%;
+        width: 100%;
+    }
+    
+    .PageNavItem {
+        border-top: solid white;
+        border-bottom: solid white;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
+    .PageNavItem:hover {
+        border-top: 2px solid rgb(255,129,42);
+        border-bottom: 2px solid rgb(255,129,42);
+    }
+
+    #ActivePage {
+        border-top: 2px solid rgb(255,129,42);
+        border-bottom: 2px solid rgb(255,129,42);
+        color: white !important;
+    }
+
+    .MenuItem {
+        display: block;
+    }
+
+    #HomepageLink {
+        display: block;
+    }
+
+    .LMUKItem {
+        margin-left: 1%;
+        margin-top: 1.5%;
+    }
+
 }
