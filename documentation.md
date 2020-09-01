@@ -39,6 +39,7 @@ The website contains:
     Mobile: ![](wireframes/workbook-mobile.png)
 
 ## 1.1.3 Colour Choices
+
 The colour palette for the Work Experience Portal pertains to LMUK intranet site colour palettes. The prominent dark blues are characteristic of Lockheed Martin's brand, combined with the white backgrounds and black text make the data easily visible to the user. Orange accents are used to highlight objects of interest to the user.  
 
 ## 1.1.4 Accessibility
@@ -47,69 +48,17 @@ Upon completion of the site, I compared my work against the W3C accessibility st
 
 All of my pages are titled, concisely detailing the content of the page. 
 
+Each image has a description alternative to support screen readers and stand in for situations where the image cannot be rendered. 
 
+Headings for each page are hierachical to present clear structure to the reader. 
 
+Text and background contrasts pass online contrast checker tests and these colour choices made allow for good readability of material. 
 
-
-Page titles, image alts, headings, contrast ratio, text sizing, forms are labelled as required and return error if incomplete
-
-
-
-Pictures have text alternatives. Easily readable font, colour combinations, fonts are large, no scrolling content/flashing - no steps taken to address those. 
-
-Page titles are clear
-
-Images and icons have a descriptive alternative
-
-Headings are hierarchical
-
-All selectable elements tab in top-to-bottom, left-to-right order when using the keyboard and links can be accessed using the enter key on the keyboard. 
-
-All text entry fields on forms are set to required with and asterisk after the label to denote this. When inputs are incomplete on submission, a red border is added to the field and an alert is displayed listing the missing fields.
-
-Once the site was developed, all content was reviewed against the W3C Accessibility Standards using [Easy Checks - A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/). 
-
-There is no moving, flashing or multimedia content on the site, so no steps have been taken to address these areas of accessibility.
-
-### Page Titles
-
-All page titles state the name of the site and the page topic to ensure that they are accessible.
-
-### Images
-
-All images and icons have been given a descriptive alternative text to assist screen readers.
-
-### Headings
-
-Each page has a h1 heading at the top of the main portion of the page. Subsequent headings have been implemented in a hierarchical fashion to denote the importance of a topic.
-
-### Contrast Ratio
-
-Text contrasts have been checked using [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure sufficient readability.
-
-### Text Resizing
-
-All text resizes on zoom and elements do not overlap.
-
-### Keyboard Access and Visual Focus
-
-All selectable elements tab in top-to-bottom, left-to-right order when using the keyboard and links can be accessed using the enter key on the keyboard. 
-
-### Forms, Labels and Errors
-
-All text entry fields on forms are set to required with and asterisk after the label to denote this. When inputs are incomplete on submission, a red border is added to the field and an alert is displayed listing the missing fields.
+Text remains large when using smaller devices to easily express the required information to the user. 
 
 ## 1.1.5 GDPR
 
-
-
-As the website is for internal use only and will be accessed securely via the company intranet, all users will already be bound by a number of policies which encompass GDPR as well as information security, computer misuse and data privacy; all of which are all available on the intranet where this site would reside. As such, it has not been deemed necessary to reference these from within the site.
-
-Were this deployed as a standalone site used externally, a link would be included at the bottom of the page alongside the site map to the [MAXIMUS UK Privacy Policy](https://maximusuk.co.uk/privacy-policy) for reference rather than a local version held on the site itself to ensure the most up-to-date version of the policy is always being referenced. Opt-outs would also be provided on all forms to comply with GDPR.
-
-I have tried my hardest when creating this website to ensure that I keep to the GDPR guidelines with specific attention paid to the 8 rights provided by GDPR.
-One thing of note is that as this is going to be an addon to our already existing website I have linked to our Privacy policy in the footer of every one of the pages to ensure that every user has ample opportunity to read its content.
-All eight rights are clearly explained in our Privacy policy and as the form currently does not submit anywhere, I do not have to implement any systems for automatic deletion of data etc. However, when we release this website the forms will submit into our backend Salesforce system where all of our automatic data deletion is handled for us so there was very little to do GDPR wise in this website.
+Personal data is exchanged from work experience students to LMUK during the process of receiving a placement, as is necessary to pass baseline security checks as well as inform LMUK of the students themselves. An additional privacy policy would have to be drafted to encompass the information flow of any personal data the student enters via the portal, and this should be placed at the footer of every page for maximum access. 
 
 ## 1.1.6 Distance Selling
 
@@ -117,27 +66,20 @@ The Work Experience Portal is strictly informative and does not provide a facili
 
 ## 1.1.7 Evaluation
 
+The completed site fulfils the requirements of developing an area that allows students to obtain all the information required for their work experience placement, albeit somewhat lacking in the desired detail due to the inability to access key documents at this time to provide this. 
 
-Moving, Flashing, or Blinking Content
-Moving, flashing, or blinking content includes carousels (example carousel), ads, videos, auto-updating stock tickers, scrolling news feeds, and more. Users need to be able to control moving content, especially some people with attention deficit disorder or visual processing disorders.
+Initially, I began by brainstorming the required content and segregating this output into logical categories of content that would outline the page titles: homepage, agenda, profile, FAQs and workbook. 
 
-Potential accessibility problems with moving, flashing, or blinking content include:
+Wireframes were then developed to describe the desired structure and feel of the pages. A key aim was to remain in-theme with other LMUK intranet layouts, though since the audience would be work experience students during placement, the most likely device to be used would be mobile, so I took a mobile-centric approach to the wireframes. The general concept was to keep the site relatively uniform and free of clutter, as to not distract from the information being provided, and make it easily interpreted and digestible. Navigation side bars to be incorporated to outline key content and separate out any key content. 
 
-Understanding moving information — Some people read and process information slowly. The content may disappear before people have time to read it. Some people have difficulty tracking moving objects.
-Distraction from moving content — Moving content can make focusing and reading elsewhere difficult; that is, people cannot focus on some content because the movement in another area of the web page grabs their attention.
-Additionally, flashing or blinking content can cause seizures in people with photosensitive epilepsy, particularly if it:
+An additional step I took was to complete the wireframes with the true colour choices. This helped me to visualise the outcome of the web pages and make additional adjustments for user experience. At this stage, it became clear that the orange accenting on key areas of interest to the user was fundamental. 
 
-flashes more than three times in one second,
-covers a large enough area of the screen, and
-is bright enough.
-What to check for:
-Check if there is any moving, blinking, or scrolling information that starts automatically and lasts more than five seconds. If there is, check that there is a way for the user to pause, stop, or hide the movement.
-Check if there is any auto-updated information (such as stock price). If there is, check that there is a way for the user to pause, stop, or hide the updated information, or for the user to control the frequency of the update.
-Check that no content flashes or blinks more than three times in one second. If it does, further evaluation is needed as explained in Three Flashes or Below Threshold.
+The development was completed on a high-resolution desktop using browser developer tools to adjust display scale to replicate smaller devices. I also experimented with other browsers, and ran into particular issue with elements of flexbox not being incorporated with an older version of internet explorer, and thus adjusted my strategy to use floats to accommodate more browser generations. 
 
-You should dedicate a section in the documentation that reflectively evaluates the work that has taken place. Answering some of the below questions could help you:
+To improve the responsive nature of the site, I added an additional breakpoint at 980px outside of the planned mobile breakpoint of 480px. This allowed for better formatting of the header and footer when using larger mobile devices and shrinking the window while using a desktop. Rigorous trial and error using browser developer tools was key in this process to fine-tune the formatting of elements for optimal alignment and display. 
 
-To what extent did you tackle the problem that you set out to solve?
-What problems did you encounter along the way?
-How did you test your website/web-application on multiple devices, and what did you find out?
-What informed your design choices?
+I also tested the site against the accessibility criteria for compliance. This uncovered small shortcomings to be amended, such adding alts to all site images. With improved appreciation of the accessibility specifications through further development, simple errors like these would become engrained into the development process naturally. 
+
+An area of functionality omitted in this assignment was the posting and retrieval of data to and from a back-end LMUK server. This capability was beyond the scope of the assignment as it would require access to LMUK secure servers, alongside API development to interface to the site. This would have been effective in the saving of student workbook notes and personal information comments, as well as the uploading of a CV to the LMUK servers. 
+
+To conclude, the site is capable of presenting the required information to the user in a high-quality standard. 
