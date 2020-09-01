@@ -43,6 +43,18 @@ The colour palette for the Work Experience Portal pertains to LMUK intranet site
 
 ## 1.1.4 Accessibility
 
+Upon completion of the site, I compared my work against the W3C accessibility standards [Easy Checks - A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/) and conformed in large part to the checks. 
+
+All of my pages are titled, concisely detailing the content of the page. 
+
+
+
+
+
+Page titles, image alts, headings, contrast ratio, text sizing, forms are labelled as required and return error if incomplete
+
+
+
 Pictures have text alternatives. Easily readable font, colour combinations, fonts are large, no scrolling content/flashing - no steps taken to address those. 
 
 Page titles are clear
@@ -55,7 +67,37 @@ All selectable elements tab in top-to-bottom, left-to-right order when using the
 
 All text entry fields on forms are set to required with and asterisk after the label to denote this. When inputs are incomplete on submission, a red border is added to the field and an alert is displayed listing the missing fields.
 
-Site has been reviewed against W3C accessibility standards [Easy Checks - A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/). 
+Once the site was developed, all content was reviewed against the W3C Accessibility Standards using [Easy Checks - A First Review of Web Accessibility](https://www.w3.org/WAI/test-evaluate/preliminary/). 
+
+There is no moving, flashing or multimedia content on the site, so no steps have been taken to address these areas of accessibility.
+
+### Page Titles
+
+All page titles state the name of the site and the page topic to ensure that they are accessible.
+
+### Images
+
+All images and icons have been given a descriptive alternative text to assist screen readers.
+
+### Headings
+
+Each page has a h1 heading at the top of the main portion of the page. Subsequent headings have been implemented in a hierarchical fashion to denote the importance of a topic.
+
+### Contrast Ratio
+
+Text contrasts have been checked using [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure sufficient readability.
+
+### Text Resizing
+
+All text resizes on zoom and elements do not overlap.
+
+### Keyboard Access and Visual Focus
+
+All selectable elements tab in top-to-bottom, left-to-right order when using the keyboard and links can be accessed using the enter key on the keyboard. 
+
+### Forms, Labels and Errors
+
+All text entry fields on forms are set to required with and asterisk after the label to denote this. When inputs are incomplete on submission, a red border is added to the field and an alert is displayed listing the missing fields.
 
 ## 1.1.5 GDPR
 
@@ -74,3 +116,28 @@ All eight rights are clearly explained in our Privacy policy and as the form cur
 The Work Experience Portal is strictly informative and does not provide a facility for users to make a purchase of any kind, thus The Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 is not relevant. 
 
 ## 1.1.7 Evaluation
+
+
+Moving, Flashing, or Blinking Content
+Moving, flashing, or blinking content includes carousels (example carousel), ads, videos, auto-updating stock tickers, scrolling news feeds, and more. Users need to be able to control moving content, especially some people with attention deficit disorder or visual processing disorders.
+
+Potential accessibility problems with moving, flashing, or blinking content include:
+
+Understanding moving information — Some people read and process information slowly. The content may disappear before people have time to read it. Some people have difficulty tracking moving objects.
+Distraction from moving content — Moving content can make focusing and reading elsewhere difficult; that is, people cannot focus on some content because the movement in another area of the web page grabs their attention.
+Additionally, flashing or blinking content can cause seizures in people with photosensitive epilepsy, particularly if it:
+
+flashes more than three times in one second,
+covers a large enough area of the screen, and
+is bright enough.
+What to check for:
+Check if there is any moving, blinking, or scrolling information that starts automatically and lasts more than five seconds. If there is, check that there is a way for the user to pause, stop, or hide the movement.
+Check if there is any auto-updated information (such as stock price). If there is, check that there is a way for the user to pause, stop, or hide the updated information, or for the user to control the frequency of the update.
+Check that no content flashes or blinks more than three times in one second. If it does, further evaluation is needed as explained in Three Flashes or Below Threshold.
+
+You should dedicate a section in the documentation that reflectively evaluates the work that has taken place. Answering some of the below questions could help you:
+
+To what extent did you tackle the problem that you set out to solve?
+What problems did you encounter along the way?
+How did you test your website/web-application on multiple devices, and what did you find out?
+What informed your design choices?

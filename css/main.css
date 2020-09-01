@@ -232,6 +232,12 @@ table {
     overflow: hidden;
 }
 
+.ProfileDetails {
+    width: 75% !important;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
 section {
     color: black;
     float: left;
@@ -505,6 +511,11 @@ span {
         background-color: white;
         margin-left: 1%;
         margin-top: 1.5%;
+    }
+
+    .ProfileDetails {
+        width: 98% !important;
+        margin: 1%;
     }
 
 }
