@@ -4,7 +4,7 @@
     margin: 0;
     border: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -35,20 +35,15 @@ h3 {
 
 links {
     display: inline-block;
+    margin: auto;
+    margin-left: 0;
     margin-right: 7.5%;
 }
 
-.fa {
-    display: inline-block;
-    background-color: white;
-    padding: 10px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: rgb(18, 36, 70);
-    margin-top: 0.5%;
+.social {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
 }
 
 #HeaderWrapper {
@@ -66,11 +61,13 @@ links {
 }
 
 #MenuList {
+    text-align: center;
     display: inline-block;
     list-style-type: none;
-    margin-left: 7.5%;
-    margin-top: 1.5%;
-    width: 55%;
+    margin-left: 5%;
+    margin-right: 7.5%;
+    margin-top: 1%;
+    width: 50%;
 }
 
 .MenuItem {
@@ -87,6 +84,7 @@ links {
     padding-bottom: 1%;
     text-decoration: none;
     transition: background-size 0.5s;
+    margin-top: 1.5%;
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -103,7 +101,8 @@ links {
     padding-top: 0.5%;
     padding-bottom: 1%;
     margin: auto;
-    margin-left: 10%;
+    margin-top: 1.5%;
+    margin-left: 5%;
     display: inline-block;
 }
 
@@ -336,51 +335,6 @@ span {
     background-color: rgb(255,129,42);
 }
 
-/* responsive layout for displays <= 1200px */
-
-@media (max-width: 1200px) {
-
-    .MenuItem {
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 1%;
-        text-decoration: none;
-        background:
-        linear-gradient(
-          to bottom, rgb(36,80,141) 0%,
-          rgb(36,80,141) 100%
-        );
-       background-position: 0 100%;
-       background-repeat: repeat-x;
-       background-size: 3px 3px;
-       color: white;
-       padding-left: 1%;
-       padding-right: 1%;
-       padding-top: 0.5%;
-       padding-bottom: 1%;
-    }
-    
-    .LMUKItem {
-       
-        margin: auto;
-        margin-top: 1.5%;
-        margin-left: 1%;
-    }
-
-    h3 {
-        
-    }
-    
-    .links {
-        display: inline-block;
-    }
-
-    #footer {
-        
-    }
-
-}
-
 /* responsive design for displays <= 980px */
 
 @media (max-width: 980px) {
@@ -422,6 +376,10 @@ span {
         text-align: center;
     }
 
+    .LMUKItem {
+        margin-left: 0;
+    }
+
 #ContentWrapper {
     width: 100%;
     min-height: 100vh;
@@ -447,6 +405,7 @@ span {
     }
 
     #MenuList {
+        text-align: left;
         max-width: 75%;
         width: 75%;
     }
