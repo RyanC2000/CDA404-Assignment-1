@@ -51,32 +51,32 @@
 
             <div id="slide-container">
                 <div class="effect slide">
-                    <img src="imgs/1.PNG">
+                    <img src="imgs/1.PNG" alt="Turret System">
                 </div>
                 <div class="effect slide">
-                    <img src="imgs/2.PNG">
+                    <img src="imgs/2.PNG" alt ="Battlegroup Command and Control Trainer (BC2T)">
                 </div>
                 <div class="effect slide">
-                    <img src="imgs/3.PNG">
+                    <img src="imgs/3.PNG" alt="C-130J Super Hercules Aircraft">
                 </div>
                 <div class="effect slide">
-                    <img src="imgs/4.PNG">
+                    <img src="imgs/4.PNG" alt="F-35 Lightning II Aircraft">
                 </div>
                 <div class="effect slide">
-                    <img src="imgs/5.PNG">
+                    <img src="imgs/5.PNG" alt="Target Acquisition Designation Sight/Pilot Night Vision Sensor (M-TADS/PNVS)">
                 </div>
                 <div class="effect slide">
-                    <img src="imgs/6.PNG">
+                    <img src="imgs/6.PNG" alt="Queen Elizabeth Class Aircraft Carrier Support (F-35 Aircraft and Merlin Helicopter)">
                 </div>
                 <div class="effect slide">
-                    <img src="imgs/7.PNG">
+                    <img src="imgs/7.PNG" alt="UK Seabed Resources">
                 </div>
                 <div class="effect slide">
-                    <img src="imgs/8.PNG">
+                    <img src="imgs/8.PNG" alt="Merlin Helicopter">
                 </div>
             </div>
 
-            <div class="dot-container">
+            <div class="circles-container">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -98,11 +98,11 @@
 
         <script>
             var index = 0;
-            show();
-            function show() {
+            nextSlide();
+            function nextSlide() {
                 var i;
                 var slides = document.getElementsByClassName("slide");
-                var dots = document.getElementsByTagName("span");
+                var circles = document.getElementsByTagName("span");
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = " none";
                 }
@@ -111,12 +111,12 @@
                 if (index > slides.length) {
                     index = 1;
                 }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+                for (i = 0; i < circles.length; i++) {
+                    circles[i].className = circles[i].className.replace("ActiveSlide", "");
                 }
                 slides[index - 1].style.display = "block";
-                dots[index - 1].className += " active";
-                setTimeout(show, 10000);
+                circles[index - 1].className += "ActiveSlide";
+                setTimeout(nextSlide, 10000);
             }
         </script>
 

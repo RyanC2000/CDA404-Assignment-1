@@ -312,7 +312,7 @@ form input[type=submit]:hover {
     margin: auto;
 }
 
-.dot-container {
+.circles-container {
     text-align: center;
 }
 
@@ -326,7 +326,7 @@ span {
     transition: all 0.4s linear;
 }
 
-.active {
+.ActiveSlide {
     background-color: rgb(255,129,42);
 }
 
